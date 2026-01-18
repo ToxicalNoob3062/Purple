@@ -5,10 +5,7 @@ jobs:
   build:
     permissions:
       contents: write
-    strategy:
-      matrix:
-        platform: [macos-latest, ubuntu-22.04, windows-latest]
-    runs-on: ${{ matrix.platform }}
+    runs-on: "windows-latest"
     steps:
       - uses: actions/checkout@v4
       - name: Setup Bun
